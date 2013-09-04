@@ -17,22 +17,22 @@
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
     <!-- Iconos -->
-    <link rel="shortcut icon" type="image/x-icon" href="media/img/icons/favicon.ico">
-    <link rel="apple-touch-icon" href="media/img/icons/apple-touch-icon.png"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="media/img/icons/apple-touch-icon-57x57.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="media/img/icons/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="media/img/icons/apple-touch-icon-114x114.png"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="media/img/icons/apple-touch-icon-144x144.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="static/img/icons/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="static/img/icons/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="static/img/icons/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="static/img/icons/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="static/img/icons/apple-touch-icon-144x144.png"/>
     
     <!-- Styles -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
     <style>
       body {
         padding-top: 50px;
         padding-bottom: 20px;
       }
     </style>
-    <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap-theme.css">
     <link  rel="stylesheet/less" type="text/css" href="static/css/main.less">
 
     <!-- Header scripts () -->
