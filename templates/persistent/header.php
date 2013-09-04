@@ -33,7 +33,7 @@
       }
     </style>
     <link rel="stylesheet" href="static/css/bootstrap-theme.css">
-    <link  rel="stylesheet/less" type="text/css" href="static/css/main.less">
+    <link  rel="stylesheet/less" type="text/css" href="static/css/app.less">
 
     <!-- Header scripts () -->
     <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
