@@ -66,6 +66,7 @@ function openCurtain(gallery,single){
   gallery.addClass('zBottom');
   single.removeClass('zBottom');
   gallery.removeClass('zTop');
+  $('#footer').addClass('singlef');
 }
 
 function closeCurtain(gallery,single){
@@ -81,5 +82,13 @@ function closeCurtain(gallery,single){
   single.addClass('zBottom');
   single.removeClass('zTop');
   gallery.removeClass('zBottom');
+  $('#footer').removeClass('singlef');
   
 }
+
+/* Footer iphone gallery */
+
+$('#footer .icons a').click(function(event){
+  event.preventDefault();
+  $('#footer').toggleClass('openf');
+})

@@ -61,6 +61,9 @@
           <li class="icons"><a href="">I</a></li>
         </ul>
       </nav>
+      <button class="btn collapseB icons visible-xs">
+        M
+      </button>
       <div id="submenu">
         <ul class="nav navbar-nav">
           <li>
