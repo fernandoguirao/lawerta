@@ -1,5 +1,5 @@
 <div id="single">
-  <div class="proyecto" data-project="proj01" style="display:none;">
+  <div class="proyecto container" data-project="proj01" style="display:none;">
     <div class="row info-col">
       <div class="col-md-6">
         <div class="controls row">

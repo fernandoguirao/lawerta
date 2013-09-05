@@ -1,5 +1,17 @@
 .body {
-  margin-top:170px;
+  position: relative;
+  margin-top: -42px;
+  .curtain{
+    position:absolute;
+    width:100%;
+  }
+  .fixed {
+    position:fixed;
+    z-index:1;
+  }
+  #gallery{
+    margin-top: 211px;
+  }
   a.col-md-3 {
     .background-size(cover);
     background-position:center;
@@ -10,6 +22,17 @@
     text-decoration:none;
     text-align:center;
     line-height:1;
+    .transition(all,.5s,@easing);
+    &.goLeft {
+      left:-300px;
+      position:relative;
+      .opacity(0);
+    }
+    &.goRight {
+      left:500px;
+      position:relative;
+      .opacity(0);
+    }
     p {
       text-transform:uppercase;
       font-weight:600;
@@ -30,7 +53,7 @@
       color:white;
       margin-top:60px;
       .opacity(0);
-      .transition(all,.3s,@easing);
+      .transition(all,.6s,@easing);
       -webkit-transition-delay: .2s;
     }
     .hover-background {

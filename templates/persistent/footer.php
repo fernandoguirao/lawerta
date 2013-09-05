@@ -1,6 +1,8 @@
+<!--
     <footer>
       ©Jorge Lawerta. All rights reserved
     </footer>
+-->
     <!-- Footer scripts -->
     <!-- 
     %% Uncomment on live %%
