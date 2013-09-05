@@ -11,21 +11,92 @@
 
 body {
   background-color:@color-fondo;
+  font-family:@gotham;
+}
+
+p,h1,h2,h3,h4,h5,span,b,footer {
+  font-family:@gotham;
+  color:@color;
+}
+
+.nav > li > a:hover,.nav > li > a:focus {
+  background-color:none!important;
 }
 /* Navbar top */
 
+
 header {
   padding-top:99px;
+  .transition(all,.3s);
+  background-color: @color-fondo;
   .navbar-brand {
     font-size:290px;
     position: relative;
     top: -76px;
+    .transition(all,.3s,@easing);
   }
   ul {
     li.icons {
+      a {
       color:@color-claro;
       padding:0 10px;
+      margin-top:13px;
+      .transition(all,.3s,@easing);
+      &:hover {
+        color:@color;
+      }
+      }
     }
   }
+  #submenu {
+    margin-top: 34px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size:16px;
+    .transition(all,.3s,@easing);
+    ul li a {
+      color:@color;
+      font-weight:200;
+      .transition(opacity,.2s);
+      &.active {
+        font-weight:600;
+      }
+      &:hover {
+        .opacity(.8);
+      }
+    }
+  }
+  &.scrolled {
+    padding-top:26px;
+    background-color: rgba(red(@color-fondo),green(@color-fondo),blue(@color-fondo),1);
+    padding-bottom: 5px;
+    ul li a {
+      margin-top:17px;
+      color:@color!important;
+      &:hover {
+        color:@color-claro!important;
+      }
+    }
+    .navbar-brand {
+      font-size: 168px;
+      position: relative;
+      top: -43px;
+    }
+    #submenu {
+      text-align: left;
+      margin-left: -125px;
+      margin-top: -48px;
+      font-size:14px;
+      ul li a {
+        /* color:@color-claro!important; */
+      }
+    }
+  }
+}
 
+footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom:4px;
 }

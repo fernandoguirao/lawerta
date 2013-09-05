@@ -1,0 +1,46 @@
+.controls {
+  margin-top:0px;
+  line-height:1;
+  li {
+    font-size:45px;
+    color:@color-claro;
+    cursor:pointer;
+    .transition(color,.2s,@easing);
+    &:hover {
+      color:@color;
+    }
+  }
+}
+
+h2{
+  font-family:@neutra;
+  text-transform:uppercase;
+  font-size:25px;
+  margin-bottom:16px;
+}
+
+.info-project {
+  padding-right:15px;
+}
+
+.info-col {
+  position:fixed;
+  .transition(margin,.3s,@easing);
+  .col-md-6 {
+    padding-right:4%;
+  }
+}
+
+.slides {
+  margin-bottom:30px;
+  margin-top:10px;
+  img {
+    width:100%;
+  }
+}
+
+.scrolled {
+  .info-col {
+    margin-top:-110px;
+  }
+}
