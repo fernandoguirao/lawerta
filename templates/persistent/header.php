@@ -49,7 +49,7 @@
       <div class="col-md-4 navbar-header">
         <div id="logo" class="icons navbar-brand">A</div>
       </div>
-      <div class="col-md-5 col-md-offset-3">
+      <nav class="col-md-5 col-md-offset-3" role="navigation">
         <ul class="nav navbar-nav">
           <li class="icons"><a href="">B</a></li>
           <li class="icons"><a href="">C</a></li>
@@ -60,7 +60,7 @@
           <li class="icons"><a href="">G</a></li>
           <li class="icons"><a href="">I</a></li>
         </ul>
-      </div>
+      </nav>
       <div id="submenu">
         <ul class="nav navbar-nav">
           <li>

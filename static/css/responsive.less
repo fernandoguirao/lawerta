@@ -4,12 +4,78 @@
 }
 
 /* DESKTOP SMALL */
-@media (min-width: 979px) and (max-width: 1200px) {
+@media (min-width: 991px) and (max-width: 1200px) {
 
 }
 
 /* TABLET */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Header */
+  header {
+    .navbar-nav {
+      float: right;
+      margin: 0;
+      margin-top:-65px;
+      li {
+        font-size:29px;
+      }
+    }
+    #submenu {
+      float:right;
+      margin-top:71px;
+      margin-right:6px;
+      li {
+        font-size:18px;
+      }
+    }
+    &.scrolled {
+      .navbar-brand {
+        top:-29px;
+      }
+      .navbar-nav {
+        margin-top:-31px;
+        li a {
+          color:@color-claro!important;
+        }
+      }
+      #submenu {
+        margin-top:26px;
+        li a {
+          color:@color!important;
+        }
+      }
+    }
+  }
+  /* Gallery */
+  .body {
+    #gallery {
+      margin-left:2%;
+    }
+    a.col-md-3 {
+      display:inline-block;
+      width:22%;
+      &:hover {
+        top: 0!important;
+        position: relative;
+      }
+      p {
+        margin-top:62px;
+      }
+      span {
+        margin-top:0;
+      }
+    }
+    .col-md-6 {
+      width: 51%;
+    }
+    .col-md-offset-6 {
+      margin-left: 49%;
+    }
+    .info-col .col-md-6 {
+      padding-right: 10%;
+    }
+  }
 
 }
 
