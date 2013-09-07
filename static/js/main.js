@@ -11,7 +11,7 @@ $(window).scroll(function(){
 /* Abrir colapse */
 
 $('.cOpen').click(function(){
-  $('#side-menu,header').addClass('moveLeft');
+  $('#side-menu').addClass('moveLeft');
 });
 
 $('.cClose').click(function(){
