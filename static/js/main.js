@@ -12,6 +12,7 @@ $(window).scroll(function(){
 
 $('.cOpen').click(function(){
   $('#side-menu').addClass('moveLeft');
+  $('.openf').removeClass('openf');
 });
 
 $('.cClose').click(function(){
