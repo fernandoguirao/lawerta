@@ -6,7 +6,17 @@ $(window).scroll(function(){
   } else {
     $('header,#single').removeClass('scrolled');
   }
-})
+});
+
+/* Abrir colapse */
+
+$('.cOpen').click(function(){
+  $('#side-menu,header').addClass('moveLeft');
+});
+
+$('.cClose').click(function(){
+  $('#side-menu').removeClass('moveLeft');
+});
 
 /*
 Cuando hacemos click en un .body-container>a.col-md-3
@@ -24,6 +34,7 @@ $('.body a.col-md-3').click(function(event){
 $('.closeit').click(function(){
   closeCurtain($('#gallery'),$('.proyecto'));
 });
+
 
 
 /*
@@ -91,4 +102,51 @@ function closeCurtain(gallery,single){
 $('#footer .icons a').click(function(event){
   event.preventDefault();
   $('#footer').toggleClass('openf');
-})
+});
+
+$('li.next').click(function(){
+  changeProject($(this),'next');
+});
+
+$('li.prev').click(function(){
+  changeProject($(this),'prev');
+});
+
+
+function changeProject(actual,tipo) {
+  $actual = actual.parent().parent().parent().parent().parent();
+  $siguiente = "";
+  if (tipo==='next'){
+    if ($actual.is(':last-child')){
+      $siguiente = actual.parent().parent().parent().parent().parent().parent().children().first();
+    } else {
+      $siguiente = actual.parent().parent().parent().parent().parent().next();
+    }
+  } else {
+    if ($actual.is(':first-child')){
+      $siguiente = actual.parent().parent().parent().parent().parent().parent().children().last();
+    } else {
+      $siguiente = actual.parent().parent().parent().parent().parent().prev();
+    }
+  }
+  /* MOVEMOS EL DIV */
+  $actual.children('.info-col').addClass('toLeft');
+  $actual.children('.slides').addClass('toRight');
+  $siguiente.children('.info-col').addClass('toLeft');
+  $siguiente.children('.slides').addClass('toRight');
+  
+  setTimeout(function() {
+    $actual.hide();
+    $actual.children('.info-col').removeClass('toLeft');
+    $actual.children('.slides').removeClass('toRight');
+    $actual.removeClass('zTop');
+    $siguiente.addClass('zTop');
+    $siguiente.show();
+  },500);
+   setTimeout(function() {
+ 
+    $siguiente.children('.info-col').removeClass('toLeft');
+    $siguiente.children('.slides').removeClass('toRight');
+  },700);
+  $("html, body").animate({ scrollTop: "0" });
+}

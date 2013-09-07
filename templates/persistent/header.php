@@ -44,39 +44,5 @@
   <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
   
-  <header class="navbar-fixed-top" role="banner">
-    <div class="container">
-      <div class="col-md-4 navbar-header">
-        <div id="logo" class="icons navbar-brand">A</div>
-      </div>
-      <nav class="col-md-5 col-md-offset-3" role="navigation">
-        <ul class="nav navbar-nav">
-          <li class="icons"><a href="">B</a></li>
-          <li class="icons"><a href="">C</a></li>
-          <li class="icons"><a href="">E</a></li>
-          <li class="icons"><a href="">H</a></li>
-          <li class="icons"><a href="">D</a></li>
-          <li class="icons"><a href="">F</a></li>
-          <li class="icons"><a href="">G</a></li>
-          <li class="icons"><a href="">I</a></li>
-        </ul>
-      </nav>
-      <button class="btn collapseB icons visible-xs">
-        M
-      </button>
-      <div id="submenu">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="" class="active">Works</a>
-          </li>
-          <li>
-            <a href="">Shop</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+  <?php include 'templates/persistent/navbar-header.php';?>
 

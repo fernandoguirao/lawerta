@@ -30,8 +30,8 @@ p,h1,h2,h3,h4,h5,span,b,footer {
 .zBottom {
   z-index:-1;
 }
-/* Navbar top */
 
+/* Navbar top */
 
 header {
   padding-top:99px;
@@ -75,6 +75,7 @@ header {
       }
     }
   }
+  
   &.scrolled {
     padding-top:26px;
     background-color: rgba(red(@color-fondo),green(@color-fondo),blue(@color-fondo),1);
@@ -101,7 +102,110 @@ header {
       }
     }
   }
+  
 }
+
+/* Side menu */
+
+#side-menu {
+  background-color:#0C0C0C;
+  color:#666666;
+  padding-left:40px;
+  padding-top:13px;
+  height: 100%;
+  padding-right: 36px;
+  position:fixed;
+  top:0;
+  z-index:3000;
+  width:100%;
+  left:100%;
+  .transition(all,.25s,@easing);
+  display:none;
+  #logo {
+    font-size: 139px;
+    margin-top: -11px;
+    margin-bottom: 33px;
+    color:#666666;
+    text-shadow:none!important;
+    font-weight:lighter!important;
+    left: -28px;
+    position: relative;
+/*     .opacity(0); */
+  }
+  button {
+    margin-right:-12px;
+    font-family: 'gotham'!important;
+font-weight: 100;
+-webkit-transform: none!important;
+font-size: 19px;
+margin-top: -43px;
+    .transition(color,.2s);
+    &:hover {
+      color:white;
+    }
+  }
+  #submenu {
+    display:inherit!important;
+    margin-top:21px;
+    ul {
+      li {
+        a {
+          color:#666666;
+          text-shadow:none;
+          text-transform:uppercase;
+          .transition(color,.2s);
+          &.active {
+            color:white;
+            font-weight:600;
+          }
+          &:hover {
+            color:white;
+          }
+        }
+        &.title {
+          color:white;
+          font-weight:600;
+          text-transform:uppercase;
+          display:block;
+          padding-left:15px;
+          margin-bottom:13px;
+        }
+      }
+    }
+  }
+  nav {
+    padding-bottom: 19px;
+    max-width:335px;
+    ul {
+      margin-left:-29px;
+      li {
+        a {
+          text-shadow:none;
+          color:#666666;
+          display:inline-block;
+          font-size: 44px;
+          margin-bottom: 11px;
+          .transition(color,.2s);
+          &:hover {
+            color:white;
+          }
+          
+        }
+        &.title {
+          color:white;
+          font-weight:600;
+          text-transform:uppercase;
+          display:block;
+          margin-top: 16px;
+          margin-bottom: 35px;
+          margin-left:16px;
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
 
 footer {
   text-align: center;
@@ -122,4 +226,6 @@ footer {
   margin-right: 17px;
   font-size: 60px;
   background-color: transparent;
+  position: relative;
+  z-index: 2000;
 }

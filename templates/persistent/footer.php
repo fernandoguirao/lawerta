@@ -50,6 +50,7 @@
       }(document));
     </script>
     <script src="static/js/main.js"></script>
+    <script src="static/js/works-object.js"></script>
     <!--
     % Uncomment on live %
     <script>
@@ -59,5 +60,79 @@
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
     -->
+    
+    <!-- If smartphone open socialmedia links on apps -->
+      <?php
+      
+      //Detect special conditions devices
+      $iPod    = stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
+      $iPhone  = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+      $iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
+      $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
+      $webOS   = stripos($_SERVER['HTTP_USER_AGENT'],"webOS");
+      
+      if( $iPod || $iPhone || $iPad ){ ?>
+      
+      $(".facebook a").click(function(event) {
+        event.preventDefault();
+        var facebookfail = "fb://profile/113299752076531";
+        
+        var loadedAt = +new Date;
+        setTimeout(
+        function(){
+          if (+new Date - loadedAt < 2000){
+            window.location = facebookfail;
+          }
+        }
+        ,100);
+        
+        function LaunchApp1(){
+          window.open("https://www.facebook.com/pages/Lawerta/113299752076531","_blank");
+        };
+        LaunchApp1()
+      });
+      
+      $(".twitter a").click(function(event) {
+        event.preventDefault();
+        var twitfail = "twitter:///user?screen_name=Lawerta";
+        
+        var loadedAt2 = +new Date;
+        setTimeout(
+        function(){
+          if (+new Date - loadedAt2 < 2000){
+            window.location = twitfail;
+          }
+        }
+        ,100);
+        
+        function LaunchApp2(){
+          window.open("https://twitter.com/Lawerta","_blank");
+        };
+        LaunchApp2()
+      });
+      
+      $(".instagram a").click(function(event) {
+        event.preventDefault();
+        var instafail = "instagram://user?username=Lawerta";
+        
+        var loadedAt3 = +new Date;
+        setTimeout(
+        function(){
+          if (+new Date - loadedAt3 < 2000){
+            window.location = instafail;
+          }
+        }
+        ,100);
+        
+        function LaunchApp3(){
+          window.open("http://instagram.com/lawerta","_blank");
+        };
+        LaunchApp3()
+      });
+      
+      <?php } ?>
+      
+      
+    </script>
   </body>
 </html>

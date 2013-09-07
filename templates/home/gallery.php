@@ -10,7 +10,7 @@
           <span>Subtítulo proyecto</span>
           <div class="hover-background"></div>
         </a>
-        <a href="" class="col-md-3" style="background-image:url('media/proyectos/ejemplo02.jpg');">
+        <a href="" data-project="proj03" class="col-md-3" style="background-image:url('media/proyectos/ejemplo02.jpg');">
           <p>Título proyecto</p>
           <span>Subtítulo proyecto</span>
           <div class="hover-background"></div>

@@ -83,7 +83,24 @@
 
 /* SMARTPHONE LANDING */
 @media (max-width: 767px) {
-
+  /* Persistent */
+  header {
+    height:64px;
+  }
+  header .navbar-brand, header.scrolled .navbar-brand {
+    font-size: 138px;
+    top: -30px;
+  }
+  .collapseB {
+    font-size: 49px;
+    margin-top:-64px;
+  }
+  header, header.scrolled {
+    padding-top: 5px;
+  }
+  .body {
+    margin-top:-72px;
+  }
   /* Gallery */
   .body a.col-md-3 {
     width: 47%;
@@ -94,13 +111,6 @@
   #submenu, header nav {
     display:none!important;
   }
-  header,header.scrolled {
-    padding-top:48px;
-    .navbar-brand {
-      font-size: 200px;
-      top:-69px;
-    }
-    }
     .body #gallery {
       margin-top: 86px;
     }
@@ -125,6 +135,16 @@
     .singlef {
       display:inherit!important;
     }
+    .moveLeft {
+      left:50%!important;
+    }
+    #side-menu {
+      max-width:50%;
+      display:inherit;
+      nav {
+        max-width: 260px;
+      }
+    }
 }
 
 /* SMARTPHONE VERTICAL */
@@ -144,6 +164,14 @@
       margin:0;
     }
   }
-  
+  .moveLeft {
+    left:0!important;
+  }
+  #side-menu {
+    max-width:100%;
+    nav {
+      max-width:335px;
+    }
+  }
   
 }
