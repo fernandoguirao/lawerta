@@ -38,11 +38,8 @@
   
   <div id="side-menu">
     <div class="container">
-      <div class="col-md-4 navbar-header">
-        <div id="logo" class="icons navbar-brand">A</div>
-      </div>
       <button class="btn collapseB cClose icons visible-xs">
-        X
+        J
       </button>
       <div id="submenu">
         <ul class="nav navbar-nav">

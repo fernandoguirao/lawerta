@@ -12,7 +12,7 @@
     <!-- <link rel="canonical" href=" http://www.carmenjorda.com/" /> -->
     <!-- <meta name="keywords" content="Carmen Jordá, GP3, GP3 series, Jorda, Alcoy, Valencia, racing, Bamboo, piloto carreras, mujer, women drivers, mujer piloto, velocidad, carreras" /> -->
     <meta name="author" content="bueninvento.es" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /> -->
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
