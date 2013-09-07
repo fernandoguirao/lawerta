@@ -62,6 +62,7 @@
     -->
     
     <!-- If smartphone open socialmedia links on apps -->
+    <script>
       <?php
       
       //Detect special conditions devices
@@ -131,8 +132,7 @@
       });
       
       <?php } ?>
-      
-      
+
     </script>
   </body>
 </html>
