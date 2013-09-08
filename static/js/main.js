@@ -1,3 +1,11 @@
+Modernizr.addTest('firefox', function () {
+ return !!navigator.userAgent.match(/firefox/i);
+});
+
+Modernizr.addTest('safari', function () {
+ return !!navigator.userAgent.match(/safari/i);
+});
+
 /* Top menú scroll */
 
 $(window).scroll(function(){
@@ -71,6 +79,7 @@ function openCurtain(gallery,single){
       $si=0;
     }
   });
+  $('#single').addClass('safclass');
   single.fadeIn(700,function(){
     gallery.hide();
   });
@@ -85,6 +94,7 @@ function closeCurtain(gallery,single){
   gallery.show();
   gallery.addClass('fixed');
   single.fadeOut(700);
+  $('#single').removeClass('safclass');
   $("html, body").animate({ scrollTop: "0" });
   gallery.children().children().removeClass('goLeft');
   gallery.children().children().removeClass('goRight');
