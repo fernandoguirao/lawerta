@@ -71,6 +71,7 @@
       $iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
       $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
       $webOS   = stripos($_SERVER['HTTP_USER_AGENT'],"webOS");
+      $safari = stripos($_SERVER["HTTP_USER_AGENT"], 'Safari');
       
       if( $iPod || $iPhone || $iPad ){ ?>
       
@@ -131,6 +132,10 @@
         LaunchApp3()
       });
       
+      <?php } 
+      
+      if (strpos($_SERVER['HTTP_USER_AGENT'], 'Safari') && !strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome')) { ?>
+        $('html').addClass('safari');
       <?php } ?>
 
     </script>

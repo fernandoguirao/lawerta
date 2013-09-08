@@ -2,9 +2,7 @@ Modernizr.addTest('firefox', function () {
  return !!navigator.userAgent.match(/firefox/i);
 });
 
-Modernizr.addTest('safari', function () {
- return !!navigator.userAgent.match(/safari/i);
-});
+
 
 /* Top menú scroll */
 
