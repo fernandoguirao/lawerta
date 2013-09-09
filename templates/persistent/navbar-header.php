@@ -1,7 +1,7 @@
   <header class="navbar-fixed-top" role="banner">
     <div class="container">
       <div class="col-md-4 navbar-header">
-        <div id="logo" class="icons navbar-brand">A</div>
+        <a id="logo" class="icons navbar-brand" href="">A</a>
       </div>
       <nav class="col-md-5 col-md-offset-3" role="navigation">
         <ul class="nav navbar-nav">
@@ -24,7 +24,7 @@
             <a href="" class="active">Works</a>
           </li>
           <li>
-            <a href="">Shop</a>
+            <a href="http://society6.com/Lawerta" target="_blank">Shop</a>
           </li>
           <li>
             <a href="">Contact</a>
@@ -47,7 +47,7 @@
             <a href="" class="active">Works</a>
           </li>
           <li>
-            <a href="">Shop</a>
+            <a href="http://society6.com/Lawerta" target="_blank">Shop</a>
           </li>
           <li>
             <a href="">Contact</a>
