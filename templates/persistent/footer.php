@@ -49,6 +49,7 @@
         f.parentNode.insertBefore(p, f);
       }(document));
     </script>
+    <!-- <script src="static/js/vendor/jquery.nicescroll.min.js"></script> -->
     <script src="static/js/main.js"></script>
     <script src="static/js/works-object.js"></script>
     <!--
@@ -60,7 +61,10 @@
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
     -->
-    
+    <script>
+      $('.info-project').niceScroll({cursoropacitymin:0,cursoropacitymax:0.5});
+
+    </script>
     <!-- If smartphone open socialmedia links on apps -->
     <script>
       <?php
