@@ -1,8 +1,22 @@
+/* Detectamos firefox */
+
 Modernizr.addTest('firefox', function () {
  return !!navigator.userAgent.match(/firefox/i);
 });
 
+function showAtScroll() {
+  endOf = $(window).height()-60;
+  copy = $('.copyright');
+  $(window).scroll(function(){
+    if($(window).scrollTop()>endOf){
+      copy.fadeIn();
+    } else {
+      copy.fadeOut();
+    }
+  });
+}
 
+showAtScroll();
 
 /* Top menú scroll */
 
@@ -81,11 +95,21 @@ function openCurtain(gallery,single){
   single.fadeIn(700,function(){
     gallery.hide();
   });
+  
+  /* Posicionamos footer al final de body */
+/*
+  var heightTotal = $(window).height();
+  $(window).height(heightTotal+70);
+  $('.copyright').addClass('bottomPosition');
+  $('.bottomPosition').css({'top':heightTotal+'px'});
+*/
+  
   single.addClass('zTop');
   gallery.addClass('zBottom');
   single.removeClass('zBottom');
   gallery.removeClass('zTop');
   $('#footer').addClass('singlef');
+  showAtScroll();
 }
 
 function closeCurtain(gallery,single){

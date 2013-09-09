@@ -1,8 +1,8 @@
+    <div class="copyright" style="display:none;">
+      ©Jorge Lawerta. All rights reserved
+    </div>
     <footer id="footer" class="">
       <div class="container">
-        <div class="copyright" style="display:none;">
-          ©Jorge Lawerta. All rights reserved
-        </div>
         <div class="icons">
           <a href="">
             O

@@ -10,4 +10,9 @@
   <div class="body">
     <?php include 'templates/home/gallery.php';?>
     <?php include 'templates/home/single.php';?>
+<!--
+  <div class="copyright">
+    ©Jorge Lawerta. All rights reserved
+  </div>
+-->
   </div>
