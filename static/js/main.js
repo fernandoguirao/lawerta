@@ -29,9 +29,9 @@ function scrollClass () {
       return;
     } else {
       if ($(window).scrollTop()>80) {
-        $('header,#single').addClass('scrolled');
+        $('header,#single.proyectos').addClass('scrolled');
       } else {
-        $('header,#single').removeClass('scrolled');
+        $('header,#single.proyectos').removeClass('scrolled');
       }
     }
   });
@@ -60,28 +60,40 @@ Lo mostramos.
 
 $('.body a.col-md-3').click(function(event){
   $("html, body").animate({ scrollTop: "0" });
-    $('#single').removeClass('outof');
+    $('#single.proyectos').removeClass('outof');
     $('body').addClass('single-project');
-    $('header,#single').addClass('scrolled');
+    $('header,#single.proyectos').addClass('scrolled');
     dato = $(this).data('project');
     event.preventDefault();
     $('#gallery').addClass('outofgallery');
   setTimeout(function() {
     openCurtain($('#gallery'),$(".proyecto[data-project='"+dato+"']"));
   },450);
-
-
 });
 
-$('.closeit').click(function(){
+
+$('.closeit,.work-link').click(function(){
   $('#single').addClass('outof');
-  $('header,#single').removeClass('scrolled');
+  $('header,#single.proyectos').removeClass('scrolled');
   $('body').removeClass('single-project');
   closeCurtain($('#gallery'),$('.proyecto'));
-  
+  $('.work-link').addClass('active');
+  $('.contact-link').removeClass('active');
 });
 
-
+$('.contact-link').click(function(event){
+  $("html, body").animate({ scrollTop: "0" });
+    $('#single.contacto').removeClass('outof');
+    $('body').addClass('single-project');
+    $('#single.contacto').addClass('scrolled');
+    $('header').removeClass('scrolled');
+    $('#gallery').addClass('outofgallery');
+  setTimeout(function() {
+    openCurtain($('#gallery'),$(".contacto .proyecto"));
+  },450);
+  $('.work-link').removeClass('active');
+  $('.contact-link').addClass('active');
+});
 
 /*
 Lo que tiene que ocurrir al cerrar el single
@@ -116,7 +128,7 @@ function openCurtain(gallery,single){
       $si=0;
     }
   });
-  $('#single').addClass('safclass');
+  $('#single.proyectos').addClass('safclass');
   single.fadeIn(700,function(){
     gallery.hide();
   });
@@ -141,7 +153,7 @@ function closeCurtain(gallery,single){
   gallery.show();
   gallery.addClass('fixed');
   single.fadeOut(700);
-  $('#single').removeClass('safclass');
+  $('#single.proyectos').removeClass('safclass');
   $("html, body").animate({ scrollTop: "0" });
   gallery.children().children().removeClass('goLeft');
   gallery.children().children().removeClass('goRight');

@@ -1,4 +1,4 @@
-<div id="single">
+<div id="single" class="proyectos">
   <div class="proyecto container" data-project="proj01" style="display:none;">
     <div class="row info-col">
       <div class="col-md-6">

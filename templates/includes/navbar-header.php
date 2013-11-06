@@ -21,13 +21,13 @@
       <div id="submenu">
         <ul class="nav navbar-nav">
           <li>
-            <a href="" class="active">Works</a>
+            <a class="active work-link">Works</a>
           </li>
           <li>
             <a href="http://society6.com/Lawerta" target="_blank">Shop</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a class="contact-link">Contact</a>
           </li>
         </ul>
       </div>
