@@ -68,7 +68,7 @@ $('.body a.col-md-3').click(function(event){
     $('#gallery').addClass('outofgallery');
   setTimeout(function() {
     openCurtain($('#gallery'),$(".proyecto[data-project='"+dato+"']"));
-  },500);
+  },450);
 
 
 });

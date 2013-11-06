@@ -14,7 +14,7 @@
       margin-left:-65px;
     }
   }
-  .containerm {
+  .container {
     max-width: 868px;
   }
   ul.nav.navbar-nav {
@@ -38,7 +38,6 @@
 
 /* TABLET */
 @media (max-width: 991px) {
-
   /* Header */
   header {
     .navbar-nav {
@@ -113,6 +112,15 @@
       padding-right: 10%;
     }
   }
+  /* Temporal */
+  #single {
+    padding-top:106px;
+    position:relative;
+    z-index:0;
+    .slides {
+      margin-top:-34px;
+    }
+  }
 
 }
 
@@ -153,45 +161,65 @@
   #submenu, header nav {
     display:none!important;
   }
-    .body #gallery {
-      margin-top: 86px;
+  .body #gallery {
+    margin-top: 86px;
+  }
+  .nav > li {
+    display:inline;
+  }
+  
+  /* Single */
+  #single {
+    top:84px;
+  }
+  .body .col-md-offset-6 {
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .proyecto.container{
+    padding:0;
+    margin:0;
+  }
+  .singlef {
+    display:inherit!important;
+  }
+  .moveLeft {
+    left:50%!important;
+  }
+  #side-menu {
+    max-width:50%;
+    display:inherit;
+    nav {
+      max-width: 260px;
     }
-    .nav > li {
-      display:inline;
-    }
-    
-    /* Single */
-    #single {
-      top:84px;
-    }
-    .body .col-md-offset-6 {
-      margin-left: 0;
-      left: 0;
-      width: 100%;
-      padding: 0;
-    }
-    .proyecto.container{
-      padding:0;
-      margin:0;
-    }
-    .singlef {
-      display:inherit!important;
-    }
-    .moveLeft {
-      left:50%!important;
-    }
-    #side-menu {
-      max-width:50%;
-      display:inherit;
-      nav {
-        max-width: 260px;
-      }
-    }
-    .slides {
-      margin-top:-63px;
-    }
+  }
+  .slides {
+    margin-top:-63px;
+  }
   #footer {
     padding-top:0;
+  }
+  .info-col {
+    display:none;
+  }
+  #single {
+    padding-top:0;
+  }
+  #gallery {
+    margin-top:65px!important;
+  }
+  .navbar-fixed-top.scrolled {
+    margin-top: -44px;
+  }
+  header.scrolled .navbar-brand {
+    font-size: 100px;
+    top: 0px;
+  }
+  .scrolled .container .btn.collapseB {
+    margin-top: -40px;
+    font-size:42px;
   }
 }
 
@@ -237,5 +265,20 @@
   }
   #footer {
     padding-top:0;
+  }
+  .navbar-fixed-top.scrolled {
+    margin-top: 0;
+  }
+  .navbar-fixed-top.scrolled {
+    height: 52px;
+  }
+  .scrolled .navbar-header {
+    margin-top: -38px;
+  }
+  #gallery {
+    margin-top:86px!important;
+  }
+  #single {
+    top:103px;
   }
 }
