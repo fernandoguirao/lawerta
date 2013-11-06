@@ -12,8 +12,6 @@
 
 @easing:cubic-bezier(0.420, 0.000, 0.580, 1.000);
 
-
-
 // MIXINS LESS
 // -----------
 
@@ -46,6 +44,13 @@
   -moz-transition: @transicion @tiempo @easing;
   -o-transition: @transicion @tiempo @easing;
   transition: @transicion @tiempo @easing;
+}
+
+.transition-more(@transicion,@transicion2,@tiempo,@easing:linear) {
+  -webkit-transition: @transicion @tiempo @easing,@transicion2 @tiempo @easing;
+  -moz-transition: @transicion @tiempo @easing,@transicion2 @tiempo @easing;
+  -o-transition: @transicion @tiempo @easing,@transicion2 @tiempo @easing;
+  transition: @transicion @tiempo @easing,@transicion2 @tiempo @easing;
 }
 
 .background-size(@cover:cover) {

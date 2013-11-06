@@ -26,8 +26,8 @@
     text-decoration:none;
     text-align:center;
     line-height:1;
-    
-    .transition(all,.5s,@easing);
+    .transition-more(opacity,left,.5s,@easing);
+    position:relative;
     &.goLeft {
       left:-300px;
       position:relative;
@@ -48,7 +48,7 @@
       color:white;
       margin-top:92px;
       .opacity(0);
-      .transition(all,.3s,@easing);
+      .transition-more(margin-top,opacity,.3s);
     }
     span {
       font-weight:300;
@@ -58,7 +58,7 @@
       color:white;
       margin-top:60px;
       .opacity(0);
-      .transition(all,.6s,@easing);
+      .transition(opacity,.6s);
       -webkit-transition-delay: .2s;
     }
     .hover-background {

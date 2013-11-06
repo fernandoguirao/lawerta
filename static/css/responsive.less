@@ -12,6 +12,9 @@
 
 /* DESKTOP SMALL */
 @media (min-width: 991px) and (max-width: 1200px) {
+  #single.contacto {
+    top: 159px;
+  }
   header.scrolled {
     #submenu {
       margin-left:-65px;
@@ -41,6 +44,9 @@
 
 /* TABLET */
 @media (max-width: 991px) {
+  .contacto .slide img {
+    margin-top: -16px;
+  }
   /* Header */
   header {
     .navbar-nav {
@@ -198,8 +204,8 @@
       max-width: 260px;
     }
   }
-  .slides {
-    margin-top:-63px;
+  #single .slides {
+    margin-top:-49px;
   }
   #footer {
     padding-top:0;
@@ -223,6 +229,9 @@
   .scrolled .container .btn.collapseB {
     margin-top: -40px;
     font-size:42px;
+  }
+  header .navbar-brand {
+    .transition-more(margin-top,font-size,.3s,@easing);
   }
 }
 
