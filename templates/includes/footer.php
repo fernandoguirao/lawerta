@@ -62,7 +62,7 @@
     </script>
     -->
     <script>
-      $('.info-project').niceScroll({cursoropacitymin:0,cursoropacitymax:0.5});
+/*       $('.info-project').niceScroll({cursoropacitymin:0,cursoropacitymax:0.5}); */
 
     </script>
     <!-- If smartphone open socialmedia links on apps -->
