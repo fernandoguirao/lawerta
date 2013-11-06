@@ -59,6 +59,7 @@ Lo mostramos.
 
 
 $('.body a.col-md-3').click(function(event){
+  $('#single').removeClass('outof');
   $('body').addClass('single-project');
   $('header,#single').addClass('scrolled');
   dato = $(this).data('project');
@@ -67,9 +68,11 @@ $('.body a.col-md-3').click(function(event){
 });
 
 $('.closeit').click(function(){
+  $('#single').addClass('outof');
   $('header,#single').removeClass('scrolled');
   $('body').removeClass('single-project');
   closeCurtain($('#gallery'),$('.proyecto'));
+  
 });
 
 
@@ -197,5 +200,7 @@ function changeProject(actual,tipo) {
     $siguiente.children('.info-col').removeClass('toLeft');
     $siguiente.children('.slides').removeClass('toRight');
   },700);
-  $("html, body").animate({ scrollTop: "0" });
+  setTimeout(function() {
+    $("html, body").animate({ scrollTop: "0" });
+  },300);
 }
