@@ -59,12 +59,18 @@ Lo mostramos.
 
 
 $('.body a.col-md-3').click(function(event){
-  $('#single').removeClass('outof');
-  $('body').addClass('single-project');
-  $('header,#single').addClass('scrolled');
-  dato = $(this).data('project');
-  event.preventDefault();
-  openCurtain($('#gallery'),$(".proyecto[data-project='"+dato+"']"));
+  $("html, body").animate({ scrollTop: "0" });
+    $('#single').removeClass('outof');
+    $('body').addClass('single-project');
+    $('header,#single').addClass('scrolled');
+    dato = $(this).data('project');
+    event.preventDefault();
+    $('#gallery').addClass('outofgallery');
+  setTimeout(function() {
+    openCurtain($('#gallery'),$(".proyecto[data-project='"+dato+"']"));
+  },500);
+
+
 });
 
 $('.closeit').click(function(){
