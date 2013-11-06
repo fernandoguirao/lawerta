@@ -20,13 +20,25 @@ showAtScroll();
 
 /* Top menú scroll */
 
-$(window).scroll(function(){
-  if ($(window).scrollTop()>80) {
-    $('header,#single').addClass('scrolled');
-  } else {
-    $('header,#single').removeClass('scrolled');
-  }
-});
+/* Si estamos en home */
+
+function scrollClass () {
+  
+  $(window).scroll(function(){
+    if ($('.single-project').length == 1) {
+      return;
+    } else {
+      if ($(window).scrollTop()>80) {
+        $('header,#single').addClass('scrolled');
+      } else {
+        $('header,#single').removeClass('scrolled');
+      }
+    }
+  });
+
+}
+
+scrollClass();
 
 /* Abrir colapse */
 
@@ -47,12 +59,16 @@ Lo mostramos.
 
 
 $('.body a.col-md-3').click(function(event){
+  $('body').addClass('single-project');
+  $('header,#single').addClass('scrolled');
   dato = $(this).data('project');
   event.preventDefault();
   openCurtain($('#gallery'),$(".proyecto[data-project='"+dato+"']"));
 });
 
 $('.closeit').click(function(){
+  $('header,#single').removeClass('scrolled');
+  $('body').removeClass('single-project');
   closeCurtain($('#gallery'),$('.proyecto'));
 });
 
@@ -177,7 +193,7 @@ function changeProject(actual,tipo) {
     $siguiente.show();
   },500);
    setTimeout(function() {
- 
+  
     $siguiente.children('.info-col').removeClass('toLeft');
     $siguiente.children('.slides').removeClass('toRight');
   },700);

@@ -1,10 +1,19 @@
 /* DESKTOP BIG */
 @media (min-width: 1200px) {
-
+  header.scrolled {
+    #submenu {
+      margin-left:-40px;
+    }
+  }
 }
 
 /* DESKTOP SMALL */
 @media (min-width: 991px) and (max-width: 1200px) {
+  header.scrolled {
+    #submenu {
+      margin-left:-65px;
+    }
+  }
   .container {
     max-width: 868px;
   }
@@ -41,7 +50,7 @@
     }
     &.scrolled {
       .navbar-brand {
-        top:-29px;
+        top:-45px;
       }
       .navbar-nav {
         margin-top:-31px;
@@ -94,6 +103,7 @@
 /* SMARTPHONE LANDING */
 @media (max-width: 767px) {
   /* Persistent */
+
   .container {
     padding-top:11px;
   }
