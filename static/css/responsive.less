@@ -5,7 +5,17 @@
 
 /* DESKTOP SMALL */
 @media (min-width: 991px) and (max-width: 1200px) {
-
+  .container {
+    max-width: 868px;
+  }
+  ul.nav.navbar-nav {
+    margin-right: -45px;
+    right: 24px;
+    position: relative;
+  }
+  .body a.col-md-3 {
+    height:190px;
+  }
 }
 
 /* TABLET */
@@ -84,16 +94,22 @@
 /* SMARTPHONE LANDING */
 @media (max-width: 767px) {
   /* Persistent */
+  .container {
+    padding-top:11px;
+  }
   header {
     height:64px;
   }
   header .navbar-brand, header.scrolled .navbar-brand {
     font-size: 138px;
     top: -30px;
+    left:20px;
   }
   .collapseB {
     font-size: 49px;
     margin-top:-64px;
+    position: relative;
+    right: -19px;
   }
   header, header.scrolled {
     padding-top: 5px;
@@ -149,6 +165,10 @@
 
 /* SMARTPHONE VERTICAL */
 @media (max-width: 480px) {
+  /* Persistentes */
+  .container > .navbar-header, .container > .navbar-collapse {
+    margin-top:-11px;
+  }
   /* Gallery */
   .body a.col-md-3 {
     width: 100%;

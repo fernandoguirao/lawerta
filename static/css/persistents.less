@@ -50,20 +50,24 @@ header {
     position: relative;
     top: -76px;
     .transition(all,.3s,@easing);
+    padding-left: 0;
+    left: -4px;
     &:hover {
       color:lighten(@color,5%)!important;
     }
   }
-  ul {
+  ul.navbar-nav {
+    float:right!important;
+    margin-rigght:-16px;
     li.icons {
       a {
-      color:@color-claro;
-      padding:0 10px;
-      margin-top:13px;
-      .transition(all,.3s,@easing);
-      &:hover {
-        color:@color;
-      }
+        color:@color-claro;
+        padding:0 10px;
+        margin-top:13px;
+        .transition(all,.3s,@easing);
+        &:hover {
+          color:@color;
+        }
       }
     }
   }
@@ -102,6 +106,8 @@ header {
       font-size: 168px;
       position: relative;
       top: -43px;
+      padding-left: 0;
+      left: -4px;
     }
     #submenu {
       text-align: left;
