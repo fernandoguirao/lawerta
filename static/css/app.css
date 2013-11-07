@@ -73,3 +73,5 @@ h2{font-family:'neutra';text-transform:uppercase;font-size:25px;margin-bottom:16
 .safari .body{min-height:400px}
 .safari #single.safclass{z-index:1029}
 .safari footer{z-index:1032}
+.edgeLoad-skate{visibility:hidden}
+#Stage{position:absolute !important;top:0;left:0;z-index:10000}

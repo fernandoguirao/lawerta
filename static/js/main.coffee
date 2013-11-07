@@ -1,3 +1,6 @@
+# $("#centraStage").fadeTo("slow",1).delay(4500).fadeTo("slow",0).hide
+
+
 # Detectamos firefox 
 
 # Mostrar copyright en fin de scroll 
